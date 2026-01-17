@@ -21,11 +21,11 @@
     "description": "Sass (indented syntax) grammar for tree-sitter",
     "authors": [
       {
-        "name": "Tree-sitter Community"
+        "name": "Raunak"
       }
     ],
     "links": {
-      "repository": "https://github.com/tree-sitter/tree-sitter-sass"
+      "repository": "https://github.com/bajrangCoder/tree-sitter-sass"
     }
   }
 }
