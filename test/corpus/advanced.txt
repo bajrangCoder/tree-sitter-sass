@@ -1,0 +1,211 @@
+================================================================================
+If Statement
+================================================================================
+
+@if $dark
+  color: white
+
+---
+
+(stylesheet
+  (if_statement
+    (if_clause
+      (condition
+        (variable_value))
+      (block
+        (declaration
+          (property_name)
+          (color_keyword))))))
+
+================================================================================
+If Else Statement
+================================================================================
+
+@if $dark
+  color: white
+@else
+  color: black
+
+---
+
+(stylesheet
+  (if_statement
+    (if_clause
+      (condition
+        (variable_value))
+      (block
+        (declaration
+          (property_name)
+          (color_keyword))))
+    (else_clause
+      (block
+        (declaration
+          (property_name)
+          (color_keyword))))))
+
+================================================================================
+Each Loop
+================================================================================
+
+@each $color in $colors
+  .text-#{$color}
+    color: $color
+
+---
+
+(stylesheet
+  (each_statement
+    (variable)
+    (variable_value)
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name
+              (interpolation
+                (variable_value)))))
+        (block
+          (declaration
+            (property_name)
+            (variable_value)))))))
+
+================================================================================
+For Loop
+================================================================================
+
+@for $i from 1 through 3
+  .col-#{$i}
+    width: 100px
+
+---
+
+(stylesheet
+  (for_statement
+    (variable_name)
+    (from_value
+      (integer_value))
+    (to_value
+      (integer_value))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name
+              (interpolation
+                (variable_value)))))
+        (block
+          (declaration
+            (property_name)
+            (integer_value)))))))
+
+================================================================================
+While Loop
+================================================================================
+
+@while $i > 0
+  .item
+    margin: 10px
+
+---
+
+(stylesheet
+  (while_statement
+    (condition
+      (binary_expression
+        left: (variable_value)
+        right: (integer_value)))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value)))))))
+
+================================================================================
+Function Definition
+================================================================================
+
+@function double($n)
+  @return $n * 2
+
+---
+
+(stylesheet
+  (function_statement
+    (name)
+    (parameters
+      (parameter
+        (variable_name)))
+    (block
+      (return_statement
+        (binary_expression
+          left: (variable_value)
+          right: (integer_value))))))
+
+================================================================================
+Media Query
+================================================================================
+
+@media screen
+  .box
+    width: 100px
+
+---
+
+(stylesheet
+  (media_statement
+    (keyword_query)
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value)))))))
+
+================================================================================
+Attribute Selector
+================================================================================
+
+a[href="test"]
+  color: blue
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (attribute_selector
+        (tag_name)
+        (attribute_name)
+        (string_value)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))
+
+================================================================================
+Multiple Selectors
+================================================================================
+
+.a, .b
+  color: red
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name))
+      (class_selector
+        (class_name)))
+    (block
+      (declaration
+        (property_name)
+        (color_keyword)))))

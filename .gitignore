@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+*.node
+*.wasm
+src/parser.c
+src/tree_sitter/
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test artifacts
+.test*/
+
+# Lock files (for publishing)
+package-lock.json
+bun.lockb
