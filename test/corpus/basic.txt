@@ -512,3 +512,203 @@ Not Selector
       (declaration
         (property_name)
         (plain_value)))))
+
+================================================================================
+Layer Statement Simple
+================================================================================
+
+@layer base, components, utilities
+
+---
+
+(stylesheet
+  (layer_statement
+    (layer_name)
+    (layer_name)
+    (layer_name)))
+
+================================================================================
+Layer Statement with Block
+================================================================================
+
+@layer base
+  .button
+    color: blue
+
+---
+
+(stylesheet
+  (layer_statement
+    (layer_name)
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Anonymous Layer
+================================================================================
+
+@layer
+  .reset
+    margin: 0
+
+---
+
+(stylesheet
+  (layer_statement
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value)))))))
+
+================================================================================
+Container Query
+================================================================================
+
+@container (min-width: 400px)
+  .card
+    display: grid
+
+---
+
+(stylesheet
+  (container_statement
+    (feature_query
+      (feature_name)
+      (integer_value
+        (unit)))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Named Container Query
+================================================================================
+
+@container sidebar (width >= 300px)
+  .widget
+    font-size: 14px
+
+---
+
+(stylesheet
+  (container_statement
+    (container_name)
+    (range_query
+      (feature_name)
+      (integer_value
+        (unit)))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value
+              (unit))))))))
+
+================================================================================
+Unicode Range
+================================================================================
+
+@font-face
+  unicode-range: U+0025-00FF
+
+---
+
+(stylesheet
+  (font_face_statement
+    (block
+      (declaration
+        (property_name)
+        (unicode_range)))))
+
+================================================================================
+Unicode Range with Wildcard
+================================================================================
+
+@font-face
+  unicode-range: U+4??
+
+---
+
+(stylesheet
+  (font_face_statement
+    (block
+      (declaration
+        (property_name)
+        (unicode_range)))))
+
+================================================================================
+Range Query in Media
+================================================================================
+
+@media (width >= 600px)
+  .box
+    color: blue
+
+---
+
+(stylesheet
+  (media_statement
+    (range_query
+      (feature_name)
+      (integer_value
+        (unit)))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Range Query Double Bound
+================================================================================
+
+@media (400px <= width <= 800px)
+  .responsive
+    padding: 20px
+
+---
+
+(stylesheet
+  (media_statement
+    (range_query
+      (integer_value
+        (unit))
+      (feature_name)
+      (integer_value
+        (unit)))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value
+              (unit))))))))

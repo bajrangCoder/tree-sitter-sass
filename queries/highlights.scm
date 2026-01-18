@@ -15,6 +15,8 @@
   "@namespace"
   "@supports"
   "@scope"
+  "@layer"
+  "@container"
   "@font-face"
   "@mixin"
   "@include"
@@ -80,6 +82,9 @@
 
 ; Colors
 (color_value) @constant.numeric.color
+
+; Unicode Range
+(unicode_range) @string.special
 
 ; Strings
 (string_value) @string
@@ -191,6 +196,14 @@
 
 ; Media queries
 (keyword_query) @keyword.media
+(feature_name) @property
+
+; Range queries
+(range_query) @keyword.media
+
+; Layer and Container
+(layer_name) @type
+(container_name) @type
 
 ; Keyframes
 (keyframes_name) @string.special

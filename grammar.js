@@ -33,6 +33,8 @@ module.exports = grammar({
     [$._selector, $._identifier_with_interpolation],
     [$._query, $._identifier_with_interpolation],
     [$.include_statement, $._identifier_with_interpolation],
+    [$.container_statement, $._identifier_with_interpolation],
+    [$._range_operator, $._binary_operator],
     [$.tag_name, $._value],
   ],
 
@@ -54,6 +56,8 @@ module.exports = grammar({
         $.keyframes_statement,
         $.supports_statement,
         $.scope_statement,
+        $.layer_statement,
+        $.container_statement,
         $.font_face_statement,
         $.mixin_statement,
         $.include_statement,
@@ -156,6 +160,30 @@ module.exports = grammar({
             optional(seq('to', '(', $._selector, ')')),
           ),
         ),
+        $._newline,
+        optional($.block),
+      ),
+
+    layer_statement: ($) =>
+      prec.right(
+        seq(
+          '@layer',
+          choice(
+            seq(sep1(',', alias($._identifier, $.layer_name)), $._newline),
+            seq(
+              optional(alias($._identifier, $.layer_name)),
+              $._newline,
+              optional($.block),
+            ),
+          ),
+        ),
+      ),
+
+    container_statement: ($) =>
+      seq(
+        '@container',
+        optional(alias($._identifier, $.container_name)),
+        $._query,
         $._newline,
         optional($.block),
       ),
@@ -401,6 +429,8 @@ module.exports = grammar({
         $.keyframes_statement,
         $.supports_statement,
         $.scope_statement,
+        $.layer_statement,
+        $.container_statement,
         $.font_face_statement,
         $.mixin_statement,
         $.include_statement,
@@ -648,6 +678,7 @@ module.exports = grammar({
       choice(
         alias($._identifier_with_interpolation, $.keyword_query),
         $.feature_query,
+        $.range_query,
         $.binary_query,
         $.unary_query,
         $.selector_query,
@@ -665,6 +696,28 @@ module.exports = grammar({
 
     unary_query: ($) => prec(1, seq(choice('not', 'only'), $._query)),
 
+    range_query: ($) =>
+      prec(
+        2,
+        seq(
+          '(',
+          choice(
+            seq(alias($._identifier, $.feature_name), $._range_operator, $._value),
+            seq($._value, $._range_operator, alias($._identifier, $.feature_name)),
+            seq(
+              $._value,
+              $._range_operator,
+              alias($._identifier, $.feature_name),
+              $._range_operator,
+              $._value,
+            ),
+          ),
+          ')',
+        ),
+      ),
+
+    _range_operator: (_) => prec(3, choice('<', '>', '<=', '>=', '=')),
+
     selector_query: ($) => seq('selector', '(', $._selector, ')'),
 
     // === Property Values ===
@@ -680,6 +733,7 @@ module.exports = grammar({
           $.boolean_value,
           $.null_value,
           $.color_value,
+          $.unicode_range,
           $.integer_value,
           $.float_value,
           $.string_value,
@@ -719,6 +773,18 @@ module.exports = grammar({
 
     list_value: ($) =>
       prec.right(-1, seq('[', sep(',', $._value), ']')),
+
+    unicode_range: (_) =>
+      token(
+        seq(
+          /[Uu]\+/,
+          choice(
+            /[0-9a-fA-F]{1,6}/,
+            seq(/[0-9a-fA-F]{1,5}/, /\?{1,5}/),
+            seq(/[0-9a-fA-F]{1,6}/, '-', /[0-9a-fA-F]{1,6}/),
+          ),
+        ),
+      ),
 
     color_value: (_) => seq('#', token.immediate(/[0-9a-fA-F]{3,8}/)),
 

@@ -233,6 +233,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -376,6 +380,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "universal_selector",
           "named": true
         },
@@ -478,6 +486,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -545,6 +557,10 @@
         },
         {
           "type": "parenthesized_query",
+          "named": true
+        },
+        {
+          "type": "range_query",
           "named": true
         },
         {
@@ -762,6 +778,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "universal_selector",
           "named": true
         },
@@ -842,6 +862,10 @@
           },
           {
             "type": "unary_expression",
+            "named": true
+          },
+          {
+            "type": "unicode_range",
             "named": true
           },
           {
@@ -977,6 +1001,10 @@
             "named": true
           },
           {
+            "type": "unicode_range",
+            "named": true
+          },
+          {
             "type": "variable_module",
             "named": true
           },
@@ -1017,6 +1045,10 @@
           "named": true
         },
         {
+          "type": "range_query",
+          "named": true
+        },
+        {
           "type": "selector_query",
           "named": true
         },
@@ -1045,6 +1077,10 @@
         },
         {
           "type": "charset_statement",
+          "named": true
+        },
+        {
+          "type": "container_statement",
           "named": true
         },
         {
@@ -1105,6 +1141,10 @@
         },
         {
           "type": "keyframes_statement",
+          "named": true
+        },
+        {
+          "type": "layer_statement",
           "named": true
         },
         {
@@ -1279,6 +1319,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -1632,11 +1676,71 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
         {
           "type": "variable_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "container_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "container_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_query",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "container_name",
+          "named": true
+        },
+        {
+          "type": "feature_query",
+          "named": true
+        },
+        {
+          "type": "interpolation",
+          "named": true
+        },
+        {
+          "type": "keyword_query",
+          "named": true
+        },
+        {
+          "type": "parenthesized_query",
+          "named": true
+        },
+        {
+          "type": "range_query",
+          "named": true
+        },
+        {
+          "type": "selector_query",
+          "named": true
+        },
+        {
+          "type": "unary_query",
           "named": true
         }
       ]
@@ -1708,6 +1812,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -1820,6 +1928,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -1919,6 +2031,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -1999,6 +2115,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -2231,6 +2351,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable",
           "named": true
         },
@@ -2363,6 +2487,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -2458,6 +2586,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -2543,6 +2675,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -2686,6 +2822,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -2775,6 +2915,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -3059,6 +3203,10 @@
           "named": true
         },
         {
+          "type": "range_query",
+          "named": true
+        },
+        {
           "type": "selector_query",
           "named": true
         },
@@ -3072,6 +3220,10 @@
         },
         {
           "type": "unary_query",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -3211,6 +3363,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -3313,6 +3469,30 @@
     }
   },
   {
+    "type": "layer_name",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "layer_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "layer_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "list_value",
     "named": true,
     "fields": {},
@@ -3378,6 +3558,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -3460,6 +3644,10 @@
             "named": true
           },
           {
+            "type": "unicode_range",
+            "named": true
+          },
+          {
             "type": "variable_module",
             "named": true
           },
@@ -3531,6 +3719,10 @@
           },
           {
             "type": "unary_expression",
+            "named": true
+          },
+          {
+            "type": "unicode_range",
             "named": true
           },
           {
@@ -3626,6 +3818,10 @@
         },
         {
           "type": "parenthesized_query",
+          "named": true
+        },
+        {
+          "type": "range_query",
           "named": true
         },
         {
@@ -3881,6 +4077,10 @@
           "named": true
         },
         {
+          "type": "range_query",
+          "named": true
+        },
+        {
           "type": "selector_query",
           "named": true
         },
@@ -3957,6 +4157,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -4216,6 +4420,93 @@
     }
   },
   {
+    "type": "range_query",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_expression",
+          "named": true
+        },
+        {
+          "type": "boolean_value",
+          "named": true
+        },
+        {
+          "type": "call_expression",
+          "named": true
+        },
+        {
+          "type": "color_value",
+          "named": true
+        },
+        {
+          "type": "css_variable",
+          "named": true
+        },
+        {
+          "type": "feature_name",
+          "named": true
+        },
+        {
+          "type": "float_value",
+          "named": true
+        },
+        {
+          "type": "integer_value",
+          "named": true
+        },
+        {
+          "type": "list_value",
+          "named": true
+        },
+        {
+          "type": "map_value",
+          "named": true
+        },
+        {
+          "type": "nesting_value",
+          "named": true
+        },
+        {
+          "type": "null_value",
+          "named": true
+        },
+        {
+          "type": "parenthesized_value",
+          "named": true
+        },
+        {
+          "type": "plain_value",
+          "named": true
+        },
+        {
+          "type": "string_value",
+          "named": true
+        },
+        {
+          "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
+          "type": "variable_module",
+          "named": true
+        },
+        {
+          "type": "variable_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "rest_argument",
     "named": true,
     "fields": {},
@@ -4311,6 +4602,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -4759,6 +5054,10 @@
           "named": true
         },
         {
+          "type": "container_statement",
+          "named": true
+        },
+        {
           "type": "debug_statement",
           "named": true
         },
@@ -4804,6 +5103,10 @@
         },
         {
           "type": "keyframes_statement",
+          "named": true
+        },
+        {
+          "type": "layer_statement",
           "named": true
         },
         {
@@ -4879,6 +5182,10 @@
         },
         {
           "type": "parenthesized_query",
+          "named": true
+        },
+        {
+          "type": "range_query",
           "named": true
         },
         {
@@ -4978,6 +5285,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -5083,6 +5394,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -5119,6 +5434,10 @@
         },
         {
           "type": "parenthesized_query",
+          "named": true
+        },
+        {
+          "type": "range_query",
           "named": true
         },
         {
@@ -5212,6 +5531,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -5325,6 +5648,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -5467,6 +5794,10 @@
           "named": true
         },
         {
+          "type": "unicode_range",
+          "named": true
+        },
+        {
           "type": "variable_module",
           "named": true
         },
@@ -5581,6 +5912,10 @@
         },
         {
           "type": "unary_expression",
+          "named": true
+        },
+        {
+          "type": "unicode_range",
           "named": true
         },
         {
@@ -5730,6 +6065,10 @@
     "named": false
   },
   {
+    "type": "@container",
+    "named": false
+  },
+  {
     "type": "@content",
     "named": false
   },
@@ -5779,6 +6118,10 @@
   },
   {
     "type": "@include",
+    "named": false
+  },
+  {
+    "type": "@layer",
     "named": false
   },
   {
@@ -5954,6 +6297,10 @@
   {
     "type": "true",
     "named": false
+  },
+  {
+    "type": "unicode_range",
+    "named": true
   },
   {
     "type": "unit",
