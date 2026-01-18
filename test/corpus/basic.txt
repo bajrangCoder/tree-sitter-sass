@@ -13,7 +13,8 @@ $size: 10px
     (plain_value))
   (declaration
     (variable_name)
-    (integer_value)))
+    (integer_value
+      (unit))))
 
 ================================================================================
 Variables with Percent
@@ -26,7 +27,8 @@ $width: 100%
 (stylesheet
   (declaration
     (variable_name)
-    (integer_value)))
+    (integer_value
+      (unit))))
 
 ================================================================================
 Rule Set
@@ -95,7 +97,8 @@ Mixin Shorthand
     (block
       (declaration
         (property_name)
-        (integer_value))))
+        (integer_value
+          (unit)))))
   (rule_set
     (selectors
       (class_selector
@@ -158,7 +161,8 @@ Function Call
         (call_expression
           (function_name)
           (arguments
-            (integer_value)))))))
+            (integer_value
+              (unit))))))))
 
 ================================================================================
 Placeholder Selector
@@ -376,5 +380,135 @@ Math Function
             name: (function_name)
             arguments: (arguments
               (binary_expression
-                left: (integer_value)
-                right: (integer_value)))))))))
+                left: (integer_value
+                  (unit))
+                right: (integer_value
+                  (unit))))))))))
+
+================================================================================
+Scope Statement
+================================================================================
+
+@scope (.card)
+  .title
+    color: blue
+
+---
+
+(stylesheet
+  (scope_statement
+    (class_selector
+      (class_name))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Scope Statement with To
+================================================================================
+
+@scope (.card) to (.content)
+  .header
+    font-size: 16px
+
+---
+
+(stylesheet
+  (scope_statement
+    (class_selector
+      (class_name))
+    (class_selector
+      (class_name))
+    (block
+      (rule_set
+        (selectors
+          (class_selector
+            (class_name)))
+        (block
+          (declaration
+            (property_name)
+            (integer_value
+              (unit))))))))
+
+================================================================================
+Nth Child Selector
+================================================================================
+
+.list
+  &:nth-child(2n+1)
+    background: gray
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (class_selector
+        (class_name)))
+    (block
+      (rule_set
+        (selectors
+          (pseudo_class_selector
+            (nesting_selector)
+            (class_name)
+            (arguments
+              (plain_value))))
+        (block
+          (declaration
+            (property_name)
+            (plain_value)))))))
+
+================================================================================
+Has Selector
+================================================================================
+
+.container:has(.active)
+  border: 1px
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (pseudo_class_selector
+        (class_selector
+          (class_name))
+        (class_name)
+        (arguments
+          (class_selector
+            (class_name)))))
+    (block
+      (declaration
+        (property_name)
+        (integer_value
+          (unit))))))
+
+================================================================================
+Not Selector
+================================================================================
+
+.item:not(.hidden)
+  display: block
+
+---
+
+(stylesheet
+  (rule_set
+    (selectors
+      (pseudo_class_selector
+        (class_selector
+          (class_name))
+        (class_name)
+        (arguments
+          (class_selector
+            (class_name)))))
+    (block
+      (declaration
+        (property_name)
+        (plain_value)))))

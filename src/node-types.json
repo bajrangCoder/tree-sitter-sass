@@ -1128,6 +1128,10 @@
           "named": true
         },
         {
+          "type": "scope_statement",
+          "named": true
+        },
+        {
           "type": "supports_statement",
           "named": true
         },
@@ -2555,7 +2559,17 @@
   {
     "type": "float_value",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "unit",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "font_face_statement",
@@ -3116,7 +3130,17 @@
   {
     "type": "integer_value",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "unit",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "interpolation",
@@ -3260,7 +3284,7 @@
     },
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
           "type": "at_keyword",
@@ -4320,6 +4344,85 @@
     }
   },
   {
+    "type": "scope_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "adjacent_sibling_selector",
+          "named": true
+        },
+        {
+          "type": "attribute_selector",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "child_selector",
+          "named": true
+        },
+        {
+          "type": "class_selector",
+          "named": true
+        },
+        {
+          "type": "descendant_selector",
+          "named": true
+        },
+        {
+          "type": "id_selector",
+          "named": true
+        },
+        {
+          "type": "interpolation",
+          "named": true
+        },
+        {
+          "type": "namespace_selector",
+          "named": true
+        },
+        {
+          "type": "nesting_selector",
+          "named": true
+        },
+        {
+          "type": "placeholder_selector",
+          "named": true
+        },
+        {
+          "type": "pseudo_class_selector",
+          "named": true
+        },
+        {
+          "type": "pseudo_element_selector",
+          "named": true
+        },
+        {
+          "type": "sibling_selector",
+          "named": true
+        },
+        {
+          "type": "string_value",
+          "named": true
+        },
+        {
+          "type": "tag_name",
+          "named": true
+        },
+        {
+          "type": "universal_selector",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "selector_query",
     "named": true,
     "fields": {},
@@ -4630,10 +4733,6 @@
         {
           "type": "interpolation",
           "named": true
-        },
-        {
-          "type": "unicode_escape",
-          "named": true
         }
       ]
     }
@@ -4725,6 +4824,10 @@
         },
         {
           "type": "rule_set",
+          "named": true
+        },
+        {
+          "type": "scope_statement",
           "named": true
         },
         {
@@ -5619,18 +5722,6 @@
     "named": false
   },
   {
-    "type": "@-moz-keyframes",
-    "named": false
-  },
-  {
-    "type": "@-o-keyframes",
-    "named": false
-  },
-  {
-    "type": "@-webkit-keyframes",
-    "named": false
-  },
-  {
     "type": "@at-root",
     "named": false
   },
@@ -5691,10 +5782,6 @@
     "named": false
   },
   {
-    "type": "@keyframes",
-    "named": false
-  },
-  {
     "type": "@media",
     "named": false
   },
@@ -5708,6 +5795,10 @@
   },
   {
     "type": "@return",
+    "named": false
+  },
+  {
+    "type": "@scope",
     "named": false
   },
   {
@@ -5812,6 +5903,10 @@
     "named": true
   },
   {
+    "type": "of",
+    "named": false
+  },
+  {
     "type": "only",
     "named": false
   },
@@ -5861,7 +5956,7 @@
     "named": false
   },
   {
-    "type": "unicode_escape",
+    "type": "unit",
     "named": true
   },
   {

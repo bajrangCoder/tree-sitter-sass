@@ -53,6 +53,7 @@ module.exports = grammar({
         $.namespace_statement,
         $.keyframes_statement,
         $.supports_statement,
+        $.scope_statement,
         $.font_face_statement,
         $.mixin_statement,
         $.include_statement,
@@ -121,13 +122,7 @@ module.exports = grammar({
       prec.right(
         1,
         seq(
-          choice(
-            '@keyframes',
-            '@-webkit-keyframes',
-            '@-moz-keyframes',
-            '@-o-keyframes',
-            alias(/@[-a-z]+keyframes/, $.at_keyword),
-          ),
+          alias(/@(-[a-z]+-)?keyframes/, $.at_keyword),
           field('name', alias($._plain_value_with_interpolation, $.keyframes_name)),
           $._newline,
           optional(alias($.keyframe_block_list, $.block)),
@@ -149,6 +144,21 @@ module.exports = grammar({
 
     supports_statement: ($) =>
       seq('@supports', $._query, $._newline, optional($.block)),
+
+    scope_statement: ($) =>
+      seq(
+        '@scope',
+        optional(
+          seq(
+            '(',
+            $._selector,
+            ')',
+            optional(seq('to', '(', $._selector, ')')),
+          ),
+        ),
+        $._newline,
+        optional($.block),
+      ),
 
     at_rule: ($) =>
       prec.right(
@@ -390,6 +400,7 @@ module.exports = grammar({
         $.namespace_statement,
         $.keyframes_statement,
         $.supports_statement,
+        $.scope_statement,
         $.font_face_statement,
         $.mixin_statement,
         $.include_statement,
@@ -489,8 +500,33 @@ module.exports = grammar({
         seq(
           optional($._selector),
           token(':'),
-          alias($._identifier_with_interpolation, $.class_name),
-          optional(alias($.pseudo_class_arguments, $.arguments)),
+          choice(
+            $._nth_child_pseudo_class_selector,
+            seq(
+              alias(
+                choice('has', 'not', 'is', 'where', 'host', 'host-context'),
+                $.class_name,
+              ),
+              alias($.pseudo_class_with_selector_arguments, $.arguments),
+            ),
+            seq(
+              alias($._identifier_with_interpolation, $.class_name),
+              optional(alias($.pseudo_class_arguments, $.arguments)),
+            ),
+            alias('host', $.class_name),
+          ),
+        ),
+      ),
+
+    _nth_child_pseudo_class_selector: ($) =>
+      prec(
+        2,
+        seq(
+          alias(
+            choice('nth-child', 'nth-last-child', 'nth-of-type', 'nth-last-of-type'),
+            $.class_name,
+          ),
+          alias($.pseudo_class_nth_child_arguments, $.arguments),
         ),
       ),
 
@@ -550,6 +586,26 @@ module.exports = grammar({
       seq(
         token.immediate('('),
         sep(',', choice(prec.dynamic(1, $._selector), repeat1($._value))),
+        ')',
+      ),
+
+    pseudo_class_with_selector_arguments: ($) =>
+      seq(
+        token.immediate('('),
+        sep(',', $._selector),
+        ')',
+      ),
+
+    pseudo_class_nth_child_arguments: ($) =>
+      seq(
+        token.immediate('('),
+        choice(
+          alias('even', $.plain_value),
+          alias('odd', $.plain_value),
+          alias(token(prec(3, /-?(\d)*n(\s*[+-]\s*\d+)?/)), $.plain_value),
+          $.integer_value,
+        ),
+        optional(seq('of', $._selector)),
         ')',
       ),
 
@@ -671,19 +727,7 @@ module.exports = grammar({
         field(
           'name',
           alias(
-            choice(
-              'rgb',
-              'rgba',
-              'hsl',
-              'hsla',
-              'hwb',
-              'lab',
-              'lch',
-              'oklch',
-              'oklab',
-              'color',
-              'color-mix',
-            ),
+            token(prec(1, /rgba?|hsla?|hwb|lab|lch|oklch|oklab|color(-mix)?/)),
             $.function_name,
           ),
         ),
@@ -695,14 +739,7 @@ module.exports = grammar({
         field(
           'name',
           alias(
-            choice(
-              'linear-gradient',
-              'radial-gradient',
-              'conic-gradient',
-              'repeating-linear-gradient',
-              'repeating-radial-gradient',
-              'repeating-conic-gradient',
-            ),
+            token(prec(1, /(repeating-)?(linear|radial|conic)-gradient/)),
             $.function_name,
           ),
         ),
@@ -714,7 +751,7 @@ module.exports = grammar({
         field(
           'name',
           alias(
-            choice('calc', 'min', 'max', 'clamp', 'abs', 'sign', 'round', 'mod', 'rem', 'sin', 'cos', 'tan', 'asin', 'acos', 'atan', 'atan2', 'pow', 'sqrt', 'hypot', 'log', 'exp'),
+            token(prec(1, /calc|min|max|clamp|abs|sign|round|mod|rem|sin|cos|tan|asin|acos|atan2?|pow|sqrt|hypot|log|exp/)),
             $.function_name,
           ),
         ),
@@ -733,53 +770,54 @@ module.exports = grammar({
     string_value: ($) => choice($._single_quoted_string, $._double_quoted_string),
 
     _single_quoted_string: ($) =>
-      seq("'", repeat(choice($._string_content, $.interpolation, $.escape_sequence, $.unicode_escape)), "'"),
+      seq("'", repeat(choice($._string_content, $.interpolation, $.escape_sequence)), "'"),
 
     _double_quoted_string: ($) =>
-      seq('"', repeat(choice($._string_content, $.interpolation, $.escape_sequence, $.unicode_escape)), '"'),
+      seq('"', repeat(choice($._string_content, $.interpolation, $.escape_sequence)), '"'),
 
-    escape_sequence: (_) => token.immediate(/\\./),
-
-    unicode_escape: (_) => token.immediate(/\\[0-9a-fA-F]{1,6}/),
+    escape_sequence: (_) =>
+      token.immediate(
+        seq(
+          '\\',
+          choice(
+            /[0-9a-fA-F]{1,6}\s?/,
+            /[^0-9a-fA-F\n\r]/,
+          ),
+        ),
+      ),
 
     integer_value: ($) =>
       prec(
         2,
-        choice(
-          token(seq(optional(choice('+', '-')), /\d+/, /[a-zA-Z%]+/)),
-          token(seq(optional(choice('+', '-')), /\d+/)),
+        seq(
+          token(prec(2, seq(optional(choice('+', '-')), /\d+/))),
+          optional($.unit),
         ),
       ),
 
     float_value: ($) =>
       prec(
         2,
-        choice(
+        seq(
           token(
-            seq(
-              optional(choice('+', '-')),
-              /\d*/,
-              choice(
-                seq('.', /\d+/),
-                seq(/[eE]/, optional('-'), /\d+/),
-                seq('.', /\d+/, /[eE]/, optional('-'), /\d+/),
-              ),
-              /[a-zA-Z%]+/,
-            ),
-          ),
-          token(
-            seq(
-              optional(choice('+', '-')),
-              /\d*/,
-              choice(
-                seq('.', /\d+/),
-                seq(/[eE]/, optional('-'), /\d+/),
-                seq('.', /\d+/, /[eE]/, optional('-'), /\d+/),
+            prec(
+              2,
+              seq(
+                optional(choice('+', '-')),
+                /\d*/,
+                choice(
+                  seq('.', /\d+/),
+                  seq(/[eE]/, optional('-'), /\d+/),
+                  seq('.', /\d+/, /[eE]/, optional('-'), /\d+/),
+                ),
               ),
             ),
           ),
+          optional($.unit),
         ),
       ),
+
+    unit: (_) => token.immediate(prec(3, /[a-zA-Z%]+/)),
 
     // === Expressions ===
 

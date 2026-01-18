@@ -13,8 +13,8 @@
   "@media"
   "@charset"
   "@namespace"
-  "@keyframes"
   "@supports"
+  "@scope"
   "@font-face"
   "@mixin"
   "@include"
@@ -73,9 +73,10 @@
 (global) @keyword.modifier
 (optional_flag) @keyword.modifier
 
-; Numbers (include units since they're now combined)
+; Numbers and units
 (integer_value) @number
 (float_value) @number.float
+(unit) @type
 
 ; Colors
 (color_value) @constant.numeric.color
@@ -83,7 +84,6 @@
 ; Strings
 (string_value) @string
 (escape_sequence) @string.escape
-(unicode_escape) @string.escape
 
 ; Variables
 (variable_name) @variable
