@@ -10,7 +10,7 @@ $size: 10px
 (stylesheet
   (declaration
     (variable_name)
-    (color_keyword))
+    (plain_value))
   (declaration
     (variable_name)
     (integer_value)))
@@ -45,7 +45,7 @@ Rule Set
     (block
       (declaration
         (property_name)
-        (color_keyword)))))
+        (plain_value)))))
 
 ================================================================================
 Nesting
@@ -66,7 +66,7 @@ Nesting
     (block
       (declaration
         (property_name)
-        (color_keyword))
+        (plain_value))
       (rule_set
         (selectors
           (class_selector
@@ -74,7 +74,7 @@ Nesting
         (block
           (declaration
             (property_name)
-            (color_keyword)))))))
+            (plain_value)))))))
 
 ================================================================================
 Mixin Shorthand
@@ -124,7 +124,7 @@ Comments
     (block
       (declaration
         (property_name)
-        (color_keyword)))))
+        (plain_value)))))
 
 ================================================================================
 Use Statement
@@ -209,7 +209,7 @@ Nesting Selector with Suffix
         (block
           (declaration
             (property_name)
-            (color_keyword)))))))
+            (plain_value)))))))
 
 ================================================================================
 Extend Statement
@@ -254,7 +254,7 @@ Pseudo Class Selector
         (block
           (declaration
             (property_name)
-            (color_keyword)))))))
+            (plain_value)))))))
 
 ================================================================================
 CSS Keywords
@@ -274,10 +274,10 @@ CSS Keywords
     (block
       (declaration
         (property_name)
-        (css_keyword))
+        (plain_value))
       (declaration
         (property_name)
-        (css_keyword)))))
+        (plain_value)))))
 
 ================================================================================
 Color Functions
@@ -322,7 +322,7 @@ CSS Custom Properties
     (block
       (declaration
         (property_name)
-        (color_keyword))
+        (plain_value))
       (declaration
         (property_name)
         (call_expression
@@ -351,8 +351,8 @@ Gradient Function
           (gradient_function
             (function_name)
             (arguments
-              (color_keyword)
-              (color_keyword))))))))
+              (plain_value)
+              (plain_value))))))))
 
 ================================================================================
 Math Function

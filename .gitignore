@@ -13,6 +13,7 @@ build/
 *.swo
 *~
 .DS_Store
+queries/zed
 
 # Logs
 *.log

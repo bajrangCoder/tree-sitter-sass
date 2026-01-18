@@ -185,15 +185,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -292,15 +284,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -446,15 +430,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -698,15 +674,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -829,15 +797,7 @@
             "named": true
           },
           {
-            "type": "color_keyword",
-            "named": true
-          },
-          {
             "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "css_keyword",
             "named": true
           },
           {
@@ -969,15 +929,7 @@
             "named": true
           },
           {
-            "type": "color_keyword",
-            "named": true
-          },
-          {
             "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "css_keyword",
             "named": true
           },
           {
@@ -1278,15 +1230,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -1611,11 +1555,6 @@
     }
   },
   {
-    "type": "color_keyword",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "color_value",
     "named": true,
     "fields": {}
@@ -1641,15 +1580,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -1728,15 +1659,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -1810,11 +1733,6 @@
     }
   },
   {
-    "type": "css_keyword",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "css_variable",
     "named": true,
     "fields": {},
@@ -1850,15 +1768,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -1941,15 +1851,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2048,15 +1950,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2285,15 +2179,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2425,15 +2311,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2516,15 +2394,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2620,15 +2490,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2762,15 +2624,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -2862,15 +2716,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -3143,15 +2989,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -3301,15 +3139,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -3479,15 +3309,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -3566,15 +3388,7 @@
             "named": true
           },
           {
-            "type": "color_keyword",
-            "named": true
-          },
-          {
             "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "css_keyword",
             "named": true
           },
           {
@@ -3648,15 +3462,7 @@
             "named": true
           },
           {
-            "type": "color_keyword",
-            "named": true
-          },
-          {
             "type": "color_value",
-            "named": true
-          },
-          {
-            "type": "css_keyword",
             "named": true
           },
           {
@@ -4082,15 +3888,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -4444,15 +4242,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5040,15 +4830,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5150,15 +4932,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5290,15 +5064,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5407,15 +5173,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5558,15 +5316,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5679,15 +5429,7 @@
           "named": true
         },
         {
-          "type": "color_keyword",
-          "named": true
-        },
-        {
           "type": "color_value",
-          "named": true
-        },
-        {
-          "type": "css_keyword",
           "named": true
         },
         {
@@ -5997,27 +5739,7 @@
     "named": false
   },
   {
-    "type": "absolute",
-    "named": false
-  },
-  {
-    "type": "aliceblue",
-    "named": false
-  },
-  {
     "type": "and",
-    "named": false
-  },
-  {
-    "type": "antiquewhite",
-    "named": false
-  },
-  {
-    "type": "aqua",
-    "named": false
-  },
-  {
-    "type": "aquamarine",
     "named": false
   },
   {
@@ -6033,285 +5755,17 @@
     "named": true
   },
   {
-    "type": "auto",
-    "named": false
-  },
-  {
-    "type": "azure",
-    "named": false
-  },
-  {
-    "type": "backwards",
-    "named": false
-  },
-  {
-    "type": "baseline",
-    "named": false
-  },
-  {
-    "type": "beige",
-    "named": false
-  },
-  {
-    "type": "bisque",
-    "named": false
-  },
-  {
-    "type": "black",
-    "named": false
-  },
-  {
-    "type": "blanchedalmond",
-    "named": false
-  },
-  {
-    "type": "block",
-    "named": false
-  },
-  {
-    "type": "blue",
-    "named": false
-  },
-  {
-    "type": "blueviolet",
-    "named": false
-  },
-  {
-    "type": "bold",
-    "named": false
-  },
-  {
-    "type": "border-box",
-    "named": false
-  },
-  {
-    "type": "both",
-    "named": false
-  },
-  {
-    "type": "bottom",
-    "named": false
-  },
-  {
-    "type": "brown",
-    "named": false
-  },
-  {
-    "type": "burlywood",
-    "named": false
-  },
-  {
-    "type": "cadetblue",
-    "named": false
-  },
-  {
-    "type": "center",
-    "named": false
-  },
-  {
-    "type": "chartreuse",
-    "named": false
-  },
-  {
-    "type": "chocolate",
-    "named": false
-  },
-  {
-    "type": "collapse",
-    "named": false
-  },
-  {
-    "type": "column",
-    "named": false
-  },
-  {
-    "type": "column-reverse",
-    "named": false
-  },
-  {
     "type": "comment",
     "named": true,
     "extra": true
-  },
-  {
-    "type": "contain",
-    "named": false
-  },
-  {
-    "type": "content-box",
-    "named": false
-  },
-  {
-    "type": "coral",
-    "named": false
-  },
-  {
-    "type": "cornflowerblue",
-    "named": false
-  },
-  {
-    "type": "cornsilk",
-    "named": false
-  },
-  {
-    "type": "cover",
-    "named": false
-  },
-  {
-    "type": "crimson",
-    "named": false
-  },
-  {
-    "type": "currentColor",
-    "named": false
-  },
-  {
-    "type": "currentcolor",
-    "named": false
   },
   {
     "type": "custom_property_name",
     "named": true
   },
   {
-    "type": "cyan",
-    "named": false
-  },
-  {
-    "type": "darkblue",
-    "named": false
-  },
-  {
-    "type": "darkcyan",
-    "named": false
-  },
-  {
-    "type": "darkgoldenrod",
-    "named": false
-  },
-  {
-    "type": "darkgray",
-    "named": false
-  },
-  {
-    "type": "darkgreen",
-    "named": false
-  },
-  {
-    "type": "darkgrey",
-    "named": false
-  },
-  {
-    "type": "darkkhaki",
-    "named": false
-  },
-  {
-    "type": "darkmagenta",
-    "named": false
-  },
-  {
-    "type": "darkolivegreen",
-    "named": false
-  },
-  {
-    "type": "darkorange",
-    "named": false
-  },
-  {
-    "type": "darkorchid",
-    "named": false
-  },
-  {
-    "type": "darkred",
-    "named": false
-  },
-  {
-    "type": "darksalmon",
-    "named": false
-  },
-  {
-    "type": "darkseagreen",
-    "named": false
-  },
-  {
-    "type": "darkslateblue",
-    "named": false
-  },
-  {
-    "type": "darkslategray",
-    "named": false
-  },
-  {
-    "type": "darkslategrey",
-    "named": false
-  },
-  {
-    "type": "darkturquoise",
-    "named": false
-  },
-  {
-    "type": "darkviolet",
-    "named": false
-  },
-  {
-    "type": "dashed",
-    "named": false
-  },
-  {
-    "type": "deeppink",
-    "named": false
-  },
-  {
-    "type": "deepskyblue",
-    "named": false
-  },
-  {
-    "type": "default",
-    "named": false
-  },
-  {
     "type": "default",
     "named": true
-  },
-  {
-    "type": "dimgray",
-    "named": false
-  },
-  {
-    "type": "dimgrey",
-    "named": false
-  },
-  {
-    "type": "dodgerblue",
-    "named": false
-  },
-  {
-    "type": "dotted",
-    "named": false
-  },
-  {
-    "type": "double",
-    "named": false
-  },
-  {
-    "type": "ease",
-    "named": false
-  },
-  {
-    "type": "ease-in",
-    "named": false
-  },
-  {
-    "type": "ease-in-out",
-    "named": false
-  },
-  {
-    "type": "ease-out",
-    "named": false
-  },
-  {
-    "type": "end",
-    "named": false
   },
   {
     "type": "escape_sequence",
@@ -6322,55 +5776,7 @@
     "named": false
   },
   {
-    "type": "fill",
-    "named": false
-  },
-  {
-    "type": "firebrick",
-    "named": false
-  },
-  {
-    "type": "fixed",
-    "named": false
-  },
-  {
-    "type": "flex",
-    "named": false
-  },
-  {
-    "type": "flex-end",
-    "named": false
-  },
-  {
-    "type": "flex-start",
-    "named": false
-  },
-  {
-    "type": "floralwhite",
-    "named": false
-  },
-  {
-    "type": "forestgreen",
-    "named": false
-  },
-  {
-    "type": "forwards",
-    "named": false
-  },
-  {
     "type": "from",
-    "named": false
-  },
-  {
-    "type": "fuchsia",
-    "named": false
-  },
-  {
-    "type": "gainsboro",
-    "named": false
-  },
-  {
-    "type": "ghostwhite",
     "named": false
   },
   {
@@ -6378,59 +5784,7 @@
     "named": true
   },
   {
-    "type": "gold",
-    "named": false
-  },
-  {
-    "type": "goldenrod",
-    "named": false
-  },
-  {
-    "type": "grab",
-    "named": false
-  },
-  {
-    "type": "grabbing",
-    "named": false
-  },
-  {
-    "type": "gray",
-    "named": false
-  },
-  {
-    "type": "green",
-    "named": false
-  },
-  {
-    "type": "greenyellow",
-    "named": false
-  },
-  {
-    "type": "grey",
-    "named": false
-  },
-  {
-    "type": "grid",
-    "named": false
-  },
-  {
-    "type": "groove",
-    "named": false
-  },
-  {
-    "type": "hidden",
-    "named": false
-  },
-  {
     "type": "hide",
-    "named": false
-  },
-  {
-    "type": "honeydew",
-    "named": false
-  },
-  {
-    "type": "hotpink",
     "named": false
   },
   {
@@ -6450,260 +5804,12 @@
     "named": false
   },
   {
-    "type": "indianred",
-    "named": false
-  },
-  {
-    "type": "indigo",
-    "named": false
-  },
-  {
-    "type": "inherit",
-    "named": false
-  },
-  {
-    "type": "initial",
-    "named": false
-  },
-  {
-    "type": "inline",
-    "named": false
-  },
-  {
-    "type": "inline-block",
-    "named": false
-  },
-  {
-    "type": "inline-flex",
-    "named": false
-  },
-  {
-    "type": "inline-grid",
-    "named": false
-  },
-  {
-    "type": "inset",
-    "named": false
-  },
-  {
-    "type": "italic",
-    "named": false
-  },
-  {
-    "type": "ivory",
-    "named": false
-  },
-  {
-    "type": "khaki",
-    "named": false
-  },
-  {
-    "type": "lavender",
-    "named": false
-  },
-  {
-    "type": "lavenderblush",
-    "named": false
-  },
-  {
-    "type": "lawngreen",
-    "named": false
-  },
-  {
-    "type": "left",
-    "named": false
-  },
-  {
-    "type": "lemonchiffon",
-    "named": false
-  },
-  {
-    "type": "lightblue",
-    "named": false
-  },
-  {
-    "type": "lightcoral",
-    "named": false
-  },
-  {
-    "type": "lightcyan",
-    "named": false
-  },
-  {
-    "type": "lightgoldenrodyellow",
-    "named": false
-  },
-  {
-    "type": "lightgray",
-    "named": false
-  },
-  {
-    "type": "lightgreen",
-    "named": false
-  },
-  {
-    "type": "lightgrey",
-    "named": false
-  },
-  {
-    "type": "lightpink",
-    "named": false
-  },
-  {
-    "type": "lightsalmon",
-    "named": false
-  },
-  {
-    "type": "lightseagreen",
-    "named": false
-  },
-  {
-    "type": "lightskyblue",
-    "named": false
-  },
-  {
-    "type": "lightslategray",
-    "named": false
-  },
-  {
-    "type": "lightslategrey",
-    "named": false
-  },
-  {
-    "type": "lightsteelblue",
-    "named": false
-  },
-  {
-    "type": "lightyellow",
-    "named": false
-  },
-  {
-    "type": "lime",
-    "named": false
-  },
-  {
-    "type": "limegreen",
-    "named": false
-  },
-  {
-    "type": "linear",
-    "named": false
-  },
-  {
-    "type": "linen",
-    "named": false
-  },
-  {
-    "type": "magenta",
-    "named": false
-  },
-  {
-    "type": "maroon",
-    "named": false
-  },
-  {
-    "type": "mediumaquamarine",
-    "named": false
-  },
-  {
-    "type": "mediumblue",
-    "named": false
-  },
-  {
-    "type": "mediumorchid",
-    "named": false
-  },
-  {
-    "type": "mediumpurple",
-    "named": false
-  },
-  {
-    "type": "mediumseagreen",
-    "named": false
-  },
-  {
-    "type": "mediumslateblue",
-    "named": false
-  },
-  {
-    "type": "mediumspringgreen",
-    "named": false
-  },
-  {
-    "type": "mediumturquoise",
-    "named": false
-  },
-  {
-    "type": "mediumvioletred",
-    "named": false
-  },
-  {
-    "type": "middle",
-    "named": false
-  },
-  {
-    "type": "midnightblue",
-    "named": false
-  },
-  {
-    "type": "mintcream",
-    "named": false
-  },
-  {
-    "type": "mistyrose",
-    "named": false
-  },
-  {
-    "type": "moccasin",
-    "named": false
-  },
-  {
-    "type": "move",
-    "named": false
-  },
-  {
-    "type": "navajowhite",
-    "named": false
-  },
-  {
-    "type": "navy",
-    "named": false
-  },
-  {
-    "type": "none",
-    "named": false
-  },
-  {
-    "type": "normal",
-    "named": false
-  },
-  {
     "type": "not",
-    "named": false
-  },
-  {
-    "type": "not-allowed",
-    "named": false
-  },
-  {
-    "type": "nowrap",
     "named": false
   },
   {
     "type": "null_value",
     "named": true
-  },
-  {
-    "type": "oldlace",
-    "named": false
-  },
-  {
-    "type": "olive",
-    "named": false
-  },
-  {
-    "type": "olivedrab",
-    "named": false
   },
   {
     "type": "only",
@@ -6718,155 +5824,7 @@
     "named": false
   },
   {
-    "type": "orange",
-    "named": false
-  },
-  {
-    "type": "orangered",
-    "named": false
-  },
-  {
-    "type": "orchid",
-    "named": false
-  },
-  {
-    "type": "outset",
-    "named": false
-  },
-  {
-    "type": "padding-box",
-    "named": false
-  },
-  {
-    "type": "palegoldenrod",
-    "named": false
-  },
-  {
-    "type": "palegreen",
-    "named": false
-  },
-  {
-    "type": "paleturquoise",
-    "named": false
-  },
-  {
-    "type": "palevioletred",
-    "named": false
-  },
-  {
-    "type": "papayawhip",
-    "named": false
-  },
-  {
-    "type": "paused",
-    "named": false
-  },
-  {
-    "type": "peachpuff",
-    "named": false
-  },
-  {
-    "type": "peru",
-    "named": false
-  },
-  {
-    "type": "pink",
-    "named": false
-  },
-  {
-    "type": "plum",
-    "named": false
-  },
-  {
-    "type": "pointer",
-    "named": false
-  },
-  {
-    "type": "powderblue",
-    "named": false
-  },
-  {
-    "type": "purple",
-    "named": false
-  },
-  {
-    "type": "rebeccapurple",
-    "named": false
-  },
-  {
-    "type": "red",
-    "named": false
-  },
-  {
-    "type": "relative",
-    "named": false
-  },
-  {
-    "type": "revert",
-    "named": false
-  },
-  {
-    "type": "revert-layer",
-    "named": false
-  },
-  {
-    "type": "ridge",
-    "named": false
-  },
-  {
-    "type": "right",
-    "named": false
-  },
-  {
-    "type": "rosybrown",
-    "named": false
-  },
-  {
-    "type": "row",
-    "named": false
-  },
-  {
-    "type": "row-reverse",
-    "named": false
-  },
-  {
-    "type": "royalblue",
-    "named": false
-  },
-  {
-    "type": "running",
-    "named": false
-  },
-  {
-    "type": "saddlebrown",
-    "named": false
-  },
-  {
-    "type": "salmon",
-    "named": false
-  },
-  {
-    "type": "sandybrown",
-    "named": false
-  },
-  {
-    "type": "scroll",
-    "named": false
-  },
-  {
-    "type": "seagreen",
-    "named": false
-  },
-  {
-    "type": "seashell",
-    "named": false
-  },
-  {
     "type": "selector",
-    "named": false
-  },
-  {
-    "type": "separate",
     "named": false
   },
   {
@@ -6882,109 +5840,13 @@
     "named": false
   },
   {
-    "type": "sienna",
-    "named": false
-  },
-  {
-    "type": "silver",
-    "named": false
-  },
-  {
     "type": "single_line_comment",
     "named": true,
     "extra": true
   },
   {
-    "type": "skyblue",
-    "named": false
-  },
-  {
-    "type": "slateblue",
-    "named": false
-  },
-  {
-    "type": "slategray",
-    "named": false
-  },
-  {
-    "type": "slategrey",
-    "named": false
-  },
-  {
-    "type": "snow",
-    "named": false
-  },
-  {
-    "type": "solid",
-    "named": false
-  },
-  {
-    "type": "space-around",
-    "named": false
-  },
-  {
-    "type": "space-between",
-    "named": false
-  },
-  {
-    "type": "space-evenly",
-    "named": false
-  },
-  {
-    "type": "springgreen",
-    "named": false
-  },
-  {
-    "type": "start",
-    "named": false
-  },
-  {
-    "type": "static",
-    "named": false
-  },
-  {
-    "type": "steelblue",
-    "named": false
-  },
-  {
-    "type": "step-end",
-    "named": false
-  },
-  {
-    "type": "step-start",
-    "named": false
-  },
-  {
-    "type": "sticky",
-    "named": false
-  },
-  {
-    "type": "stretch",
-    "named": false
-  },
-  {
     "type": "suffix",
     "named": true
-  },
-  {
-    "type": "table",
-    "named": false
-  },
-  {
-    "type": "tan",
-    "named": false
-  },
-  {
-    "type": "teal",
-    "named": false
-  },
-  {
-    "type": "text",
-    "named": false
-  },
-  {
-    "type": "thistle",
-    "named": false
   },
   {
     "type": "through",
@@ -6995,36 +5857,12 @@
     "named": false
   },
   {
-    "type": "tomato",
-    "named": false
-  },
-  {
-    "type": "top",
-    "named": false
-  },
-  {
-    "type": "transparent",
-    "named": false
-  },
-  {
     "type": "true",
-    "named": false
-  },
-  {
-    "type": "turquoise",
-    "named": false
-  },
-  {
-    "type": "underline",
     "named": false
   },
   {
     "type": "unicode_escape",
     "named": true
-  },
-  {
-    "type": "unset",
-    "named": false
   },
   {
     "type": "using",
@@ -7047,47 +5885,11 @@
     "named": true
   },
   {
-    "type": "violet",
-    "named": false
-  },
-  {
-    "type": "visible",
-    "named": false
-  },
-  {
-    "type": "wheat",
-    "named": false
-  },
-  {
-    "type": "white",
-    "named": false
-  },
-  {
-    "type": "whitesmoke",
-    "named": false
-  },
-  {
     "type": "with",
     "named": false
   },
   {
     "type": "without",
-    "named": false
-  },
-  {
-    "type": "wrap",
-    "named": false
-  },
-  {
-    "type": "wrap-reverse",
-    "named": false
-  },
-  {
-    "type": "yellow",
-    "named": false
-  },
-  {
-    "type": "yellowgreen",
     "named": false
   },
   {

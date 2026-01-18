@@ -64,12 +64,6 @@
 (boolean_value) @constant.builtin.boolean
 (null_value) @constant.builtin
 
-; CSS Keywords (inherit, auto, flex, etc.)
-(css_keyword) @constant.builtin
-
-; Color Keywords (red, blue, transparent, etc.)
-(color_keyword) @constant.numeric.color
-
 ; CSS Custom Properties
 (custom_property_name) @property.definition
 
